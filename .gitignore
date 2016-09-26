@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+build/
+yotta_modules/
+yotta_targets/

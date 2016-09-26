@@ -1,0 +1,25 @@
+{
+  "name": "microbit-physicalweb",
+  "version": "1.0.0",
+  "description": "Physical Web transmission from your bbc microbit",
+  "keywords": [
+    "physicalweb",
+    "bbcmicrobit"
+  ],
+  "author": "Show.io <opensource@show.io>",
+  "repository": {
+    "url": "git@github.com:showio/microbit-physicalweb.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/showio/microbit-physicalweb",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "dependencies": {
+    "microbit": "showio/microbit#master"
+  },
+  "bin": "./source"
+}
