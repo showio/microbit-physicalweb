@@ -94,7 +94,7 @@ void onEvent(MicroBitEvent evt)
         if (power <= 0) return;
         power--;
         if (power == 0) {
-            uBit.bleManager.stopAdvertise();
+            uBit.bleManager.stopAdvertising();
         } else {
             uBit.bleManager.advertisePhysicalWebUrl(URL, CALLIBRATED_POWERS[power - 1]);
             uBit.bleManager.setTransmitPower(power-1);
