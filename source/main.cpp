@@ -5,16 +5,16 @@ MicroBit uBit;
 char INTRO[] = "SHOW.IO";
 char URL[] = "https://show.io/Fq5sf7O9Y";
 
-// lvl : Pwr@ 1m : Pwr@ 0m : Pwr @ 0m per spec
-//  0  :   -90   :   -49   :     0xcf
-//  1  :   -78   :   -37   :     0xdb
-//  2  :   -74   :   -33   :     0xdf
-//  3  :   -69   :   -28   :     0xe4
-//  4  :   -66   :   -25   :     0xe7
-//  5  :   -61   :   -20   :     0xec
-//  6  :   -56   :   -15   :     0xf1
-//  7  :   -51   :   -10   :     0xf6
-const uint8_t CALLIBRATED_POWERS[] = {0xCF, 0xDB, 0xDF, 0xE4, 0xE7, 0xEC, 0xF1, 0xF6};
+// lvl : Pwr@ 1m : Pwr@ 0m
+//  0  :   -90   :   -49
+//  1  :   -78   :   -37
+//  2  :   -74   :   -33
+//  3  :   -69   :   -28 
+//  4  :   -66   :   -25 
+//  5  :   -61   :   -20 
+//  6  :   -56   :   -15 
+//  7  :   -51   :   -10 
+const int8_t CALLIBRATED_POWERS[] = {-49, -37, -33, -28, -25, -20, -15, -10};
 
 uint8_t power = 4;
 bool screen_off = false;
