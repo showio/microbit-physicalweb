@@ -11,7 +11,7 @@
             "dfu_service": 0,
             "event_service": 0,
             "device_info_service": 0,
-            "physical_web": 1
+            "eddystone_url": 1
         },
         "reuse_sd": 1,
         "default_pullmode":"PullDown",
