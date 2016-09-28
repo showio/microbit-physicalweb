@@ -96,7 +96,7 @@ void onEvent(MicroBitEvent evt)
         if (power == 0) {
             uBit.bleManager.stopAdvertising();
         } else {
-            uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1]);
+            uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1], false);
             uBit.bleManager.setTransmitPower(power-1);
         }
         updateDisplay();
@@ -107,7 +107,7 @@ void onEvent(MicroBitEvent evt)
     if (evt.source == MICROBIT_ID_BUTTON_B && evt.value == MICROBIT_BUTTON_EVT_CLICK) {
         if (power >= 8) return;
         power++;
-        uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1]);
+        uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1], false);
         uBit.bleManager.setTransmitPower(power-1);
         updateDisplay();
         return;
@@ -131,7 +131,7 @@ int main()
     uBit.init();
     uBit.display.scroll(INTRO);
 
-    uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1]);
+    uBit.bleManager.advertiseEddystoneUrl(URL, CALLIBRATED_POWERS[power - 1], false);
     uBit.bleManager.setTransmitPower(power-1);
     updateDisplay();
 
